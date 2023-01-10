@@ -9,7 +9,7 @@ class WSChat:
         self.conns = {}
 
     @staticmethod
-    async def main_page():
+    async def main_page(self):
         return web.FileResponse('./index_.html')
 
     async def connect_user_async(self, request: web.Request):
